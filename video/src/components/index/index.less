@@ -1,0 +1,89 @@
+.one-line{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.top-panel{
+  @tp-hg:160px;
+  @lt-wd:700px;
+  @rt-wd:280px;
+  @header-size:70px;
+
+  padding: 70px 250px 10px 250px;
+  margin-bottom: 15px;
+  height: @tp-hg;
+  background-color: white;
+  box-shadow: 0 0 2px #cccccc;
+
+  .ltpn{
+    float: left;
+    width: @lt-wd;
+    
+    .rw{
+      margin-top: 10px;
+      span{margin-left: 5px;font-size: 13px;}
+    }
+  }
+  .rtpn{
+    width: @rt-wd;
+    float: left;
+
+    .nknm{margin-top: 10px;}
+    img{
+      width: @header-size;
+      height: @header-size;
+      border-radius: @header-size/2;
+    }
+  }
+}
+
+.main-panel{
+  @mp-hg:500px;
+  @lt-wd:730px;
+  @rt-wd:260px;
+  @in-hg:@mp-hg - 30px;
+
+  margin: 0 250px;
+  min-height: @mp-hg;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 1px #cccccc;
+  padding: 10px;
+
+  .tl{
+    font-size: 20px;
+  }
+
+  .ltpn{
+    float: left;
+    width: @lt-wd;
+
+    #player{
+      width: @lt-wd;
+      height: @in-hg
+    }
+  }
+  .rtpn{
+    float: left;
+    width: @rt-wd;
+    height: @in-hg;
+  }
+}
+
+.foot-panel{
+  @ft-hg:50px;
+
+  margin: 10px 250px;
+  min-height: @ft-hg;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 0 2px #cccccc;
+  padding: 20px;
+
+  .desc{
+    margin-top: 15px;
+    font-size: 15px;
+    color: gray;
+  }
+}

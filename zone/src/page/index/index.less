@@ -1,0 +1,157 @@
+a{
+  text-decoration: none;
+  color: black;
+  transition-duration: 0.3s;
+}
+a:hover{
+  color: cornflowerblue;
+}
+
+.banner{
+  height: 220px;
+  width: 100%;
+}
+
+.head-wrapper{
+  @bg-clr:white;
+
+  background-color: @bg-clr;
+  padding-bottom: 50px;
+  box-shadow: 0 0 2px gray;
+}
+
+.main-panel{
+  @head-hg:300px;
+
+  margin: 0 250px 0 250px;
+  padding-top: 70px;
+  min-height: @head-hg;
+
+  .head-panel{
+    @gallery-wd:100%;
+
+    width: @gallery-wd;
+    .gallery{
+      height:@head-hg;
+      .item{
+        height: @head-hg;
+      }
+      img{
+        width: @gallery-wd;
+        height: @head-hg;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .news-panel{
+    @news-hg:200px;
+
+    height: @news-hg;
+    margin-top: 20px;
+    padding: 0 6px;
+
+    .tl{
+      margin-bottom: 10px;
+      span{font-size: 25px;}
+    }
+    .news{
+      @item-wd: 235px;
+      float: left;
+      margin: 0 8px;
+
+      width: @item-wd;
+      img{
+        width: @item-wd;
+        border-radius: 5px;
+      }
+
+      .news-tl{
+        margin-top: 5px;
+        font-size: 13px;
+        overflow: hidden;
+        text-overflow:ellipsis;
+        white-space: nowrap;
+        text-decoration: none;
+        color: black;
+        transition-duration: 0.3s;
+      }
+      
+      :hover{
+        color: cornflowerblue;
+      }
+    }
+  }
+}
+
+.body-wrapper{
+  margin: 20px 250px;
+
+  .tl{
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+
+  .ltpn{
+    @ltpn-wd:750px;
+
+    float: left;
+    width: @ltpn-wd;
+  }
+  .rtpn{
+    @rtpn-wd:250px;
+    @rtpn-hg:300px;
+
+    float: left;
+    width: @rtpn-wd;
+    height: @rtpn-hg;
+
+    .rk-row{
+      font-size: 15px;
+      height: 30px;
+      .title{
+        float: left;
+      }
+      .heat{
+        float: right;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+        transition-duration: 0.3s;
+        :hover{
+          color: cornflowerblue;
+        }
+      }
+    }
+  }
+
+  .video{
+    @vd-wd:165px;
+    @vd-hg:120px;
+    @mg-btm:15px;
+
+    float: left;
+    margin: 0 10px @mg-btm 10px;
+    
+    a{
+      color: black;
+    }
+
+    img{
+      width: @vd-wd;
+      height: @vd-hg;
+      border-radius: 5px;
+    }
+    .tl{
+      width: @vd-wd;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    :hover{color: cornflowerblue;}
+  }
+}
